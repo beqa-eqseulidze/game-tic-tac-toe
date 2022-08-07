@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" >    
+    <script src="./js/main.js" type="module"></script>       
+  </head>
+<body>
+    <div class="start-table">
+        <div class="logo">
+            <img src="./images/Group 2.svg" alt="game logo">
+        </div>
+        <div class="choose-symbol">
+            <p>PICK PLAYER 1'S MARK</p>
+            <div class="buttons">
+                <button id="x"><img src="./images/cross.svg" alt="button  image"></button>
+                <button id="o"><img src="./images/circle.svg" alt="button image"></button>
+            </div>
+            <p>REMEMBER: X GOES FIRST</p>
+        </div>  
+        <button class="game-mode"><span  class='activ-mode'; id="weak-mode">WEAK MODE</span> <span id="hard-mode">HARD MODE</span></button> 
+        <button class="vs-cpu">NEW GAME (VS CPU)</button>
+        <button class="vs-player">NEW GAME (VS PLAYER)</button>         
+    </div>
+    <div class="main-table">
+        <div class="top-tools">  
+            <img src="./images/Group 2.svg" alt="game logo">
+             <p class="game-mode"><span id="show-game-mode"></span></p>
+            <button class="btn-refresh"><img src="./images/btnRefresh.svg" alt="refresh image"></button>       
+        </div>         
+        <div class="grid">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+
+        <div class="results">
+            <div class="x-player">
+                <div class="pos-absolut">
+                    <p>X(<span id="how-X"></span>)</p>
+                    <p class="score player_1_score"></p>
+                </div>
+            </div>      
+            <div class="ties">
+                <div class="pos-absolut">
+                    <p>TIES</p>
+                    <p class="score ties_score"></p>
+                </div>
+            </div>
+            <div class="o-player">
+                <div class="pos-absolut">
+            <p>O(<span id="how-O"></span>)</p>
+                    <p class="score player_2_score"></p>
+                </div>
+            </div>
+        </div>  
+       
+    </div>
+
+    <div class="next-game">
+        <div class="conteiner">           
+            <p class='raund-result'></p>
+            <div class="hidden">
+                <img class="player-mark" src="" alt="player-mark" >
+                <p class="text" >TAKE THE ROUND</p>
+            </div>
+            <div>
+                <button class="quite">QUITE</button>
+                <button class="next-round">NEXT ROUND</button>
+            </div>
+        </div>
+    </div>
+         
+
+</body>
+</html>
